@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rutas en Popayán</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    body { margin: 0; padding: 0; }
+    #container { display: flex; height: 100vh; }
+    #sidebar {
+      width: 300px;
+      padding: 20px;
+      background: #f8f9fa;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    #map { flex-grow: 1; }
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .title {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="sidebar">
+      <div class="title">Rutas en Popayán</div>
+      <select id="origen">
+        <option value="">Seleccione origen</option>
+      </select>
+      <select id="destino">
+        <option value="">Seleccione destino</option>
+      </select>
+      <button onclick="calcularRuta()">Calcular Ruta</button>
+    </div>
+  <div id="map"></div>
+  </div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+-- conda activate popayan-rutas
+--   cd C:\Users\Usuario\Desktop\Popayan-rutas\backend
+python app.py
+
+--cd C:\Users\Usuario\Desktop\Popayan-rutas\frontend
+python -m http.server 8000
