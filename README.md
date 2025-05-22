@@ -101,8 +101,3 @@ Las contribuciones son bienvenidas. Por favor, abre un issue para discutir los c
 
 Contributions are welcome. Please open an issue to discuss proposed changes.
 
-## Licencia / License
-
-Este proyecto está bajo la Licencia MIT.
-
-This project is under the MIT License. 
