@@ -25,8 +25,8 @@ for u, v, k, data in G.edges(keys=True, data=True):
 lugares_importantes = {
     "Terminal": [2.450481, -76.609428],
     "Universidad del Cauca": [2.440829, -76.604511],
-    "Parque Caldas": [2.442490, -76.606653],
-    "Hospital San José": [2.449296, -76.600833],
+    "Parque Caldas": [2.442499, -76.606542],
+    "Hospital San José":[2.449296, -76.600833],
     "Centro Comercial Campanario": [2.460268, -76.595910],
     "Aeropuerto": [2.451773, -76.609893],
     "Mercado La Esmeralda": [2.444843, -76.615153],  

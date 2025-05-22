@@ -1,58 +1,108 @@
-# Popayán Rutas
+# Rutas en Popayán / Popayán Routes
 
-Este proyecto es una aplicación web para encontrar rutas en la ciudad de Popayán, Colombia. Utiliza un grafo de la red vial de la ciudad para calcular las rutas más cortas entre diferentes puntos de interés.
+## Descripción / Description
 
-## Características
+Este proyecto es una aplicación web que permite visualizar y calcular rutas en la ciudad de Popayán, Colombia. La aplicación utiliza un mapa interactivo donde los usuarios pueden seleccionar puntos de origen y destino para calcular la ruta óptima.
 
-- Cálculo de rutas entre puntos de interés en Popayán
-- Visualización de rutas en un mapa interactivo
-- Interfaz web moderna y fácil de usar
-- Backend en Python con Flask
-- Frontend con React
 
-## Requisitos
+## Requisitos / Requirements
 
-- Python 3.8+
-- Node.js 14+
-- npm o yarn
+- Python 3.x
+- Navegador web moderno / Modern web browser
+- Conexión a internet / Internet connection
+- Conda (Anaconda o Miniconda)
 
-## Instalación
+## Instalación / Installation
+
+1. Clonar el repositorio / Clone the repository:
+```bash
+git clone []
+cd Popayan-rutas
+```
+
+2. Crear y activar el entorno virtual 
+
+Para Windows / For Windows:
+```bash
+# Crear el entorno virtual / Create virtual environment
+conda create -n popayan-rutas python=3.x
+
+# Activar el entorno virtual / Activate virtual environment
+conda activate popayan-rutas
+```
+
+Para Linux/Mac / For Linux/Mac:
+```bash
+# Crear el entorno virtual / Create virtual environment
+conda create -n popayan-rutas python=3.x
+
+# Activar el entorno virtual / Activate virtual environment
+source activate popayan-rutas
+```
+
+Nota: Una vez activado el entorno virtual, verás el nombre del entorno (popayan-rutas) al inicio de tu línea de comandos.
+
+## Ejecución / Running the Application
+
+El proyecto consta de dos partes: backend y frontend. Necesitas ejecutar ambos simultáneamente.
+
+The project consists of two parts: backend and frontend. You need to run both simultaneously.
 
 ### Backend
 
+1. Navegar al directorio del backend / Navigate to backend directory:
 ```bash
 cd backend
-pip install -r requirements.txt
+```
+
+2. Ejecutar el servidor backend / Run the backend server:
+```bash
 python app.py
 ```
 
 ### Frontend
 
+1. En una nueva terminal, navegar al directorio del frontend / In a new terminal, navigate to frontend directory:
 ```bash
 cd frontend
-npm install
-npm start
 ```
 
-## Estructura del Proyecto
+2. Iniciar el servidor web local / Start the local web server:
+```bash
+python -m http.server 8000
+```
 
-- `/backend`: Servidor Flask con la lógica de cálculo de rutas
-- `/frontend`: Aplicación React para la interfaz de usuario
-- `/utils`: Utilidades y funciones auxiliares
+3. Abrir el navegador y visitar / Open your browser and visit:
+```
+http://localhost:8000
+```
 
-## Tecnologías Utilizadas
+## Uso / Usage
 
-- Backend:
-  - Flask
-  - NetworkX
-  - Shapely
-  - Flask-CORS
+1. En la interfaz web, verás un mapa de Popayán / In the web interface, you'll see a map of Popayán
+2. Utiliza los menús desplegables para seleccionar el origen y destino / Use the dropdown menus to select origin and destination
+3. Haz clic en "Calcular Ruta" para ver la ruta óptima / Click "Calcular Ruta" to see the optimal route
+
+## Tecnologías Utilizadas / Technologies Used
 
 - Frontend:
-  - React
-  - Leaflet
-  - Material-UI
+  - HTML5
+  - CSS3
+  - JavaScript
+  - Leaflet.js (para mapas interactivos / for interactive maps)
 
-## Licencia
+- Backend:
+  - Python
+  - Flask (framework web / web framework)
 
-MIT 
+## Contribución / Contributing
+
+Las contribuciones son bienvenidas. Por favor, abre un issue para discutir los cambios propuestos.
+
+Contributions are welcome. Please open an issue to discuss proposed changes.
+
+## Licencia / License
+
+Este proyecto está bajo la Licencia MIT.
+
+This project is under the MIT License. 
