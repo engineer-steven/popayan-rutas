@@ -16,7 +16,7 @@ Este proyecto es una aplicación web que permite visualizar y calcular rutas en 
 
 1. Clonar el repositorio / Clone the repository:
 ```bash
-git clone []
+git clone [https://github.com/engineer-steven/popayan-rutas.git]
 cd Popayan-rutas
 ```
 
